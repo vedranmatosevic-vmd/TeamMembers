@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/listaClanovaFragment">
+
+    <fragment
+        android:id="@+id/listaClanovaFragment"
+        android:name="com.vmdevelopment.futsalzagi.clanovi.list.ListaClanovaFragment"
+        android:label="Članovi"
+        tools:layout="@layout/fragment_lista_clanova" >
+        <action
+            android:id="@+id/action_listaClanovaFragment_to_dodajClanaFragment"
+            app:destination="@id/dodajClanaFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_listaClanovaFragment_to_urediClanaFragment"
+            app:destination="@id/urediClanaFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_listaClanovaFragment_to_listaClanarinaFragment"
+            app:destination="@id/listaClanarinaFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/dodajClanaFragment"
+        android:name="com.vmdevelopment.futsalzagi.clanovi.add.DodajClanaFragment"
+        android:label="Dodaj"
+        tools:layout="@layout/fragment_dodaj_clana" >
+        <action
+            android:id="@+id/action_dodajClanaFragment_to_listaClanovaFragment"
+            app:destination="@id/listaClanovaFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/urediClanaFragment"
+        android:name="com.vmdevelopment.futsalzagi.clanovi.update.UrediClanaFragment"
+        android:label="Uredi"
+        tools:layout="@layout/fragment_uredi_clana" >
+        <action
+            android:id="@+id/action_urediClanaFragment_to_listaClanovaFragment"
+            app:destination="@id/listaClanovaFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+        <argument
+            android:name="currentItem"
+            app:argType="com.vmdevelopment.futsalzagi.data.models.Clan" />
+        <action
+            android:id="@+id/action_urediClanaFragment_to_clanarinePoClanuFragment"
+            app:destination="@id/clanarinePoClanuFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaClanarinaFragment"
+        android:name="com.vmdevelopment.futsalzagi.clanarine.list.ListaClanarinaFragment"
+        android:label="@string/clanarine"
+        tools:layout="@layout/fragment_clanarine" >
+        <action
+            android:id="@+id/action_listaClanarinaFragment_to_listaClanovaFragment"
+            app:destination="@id/listaClanovaFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_listaClanarinaFragment_to_urediClanarinuFragment"
+            app:destination="@id/urediClanarinuFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_listaClanarinaFragment_to_dodajClanarinuFragment"
+            app:destination="@id/dodajClanarinuFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/dodajClanarinuFragment"
+        android:name="com.vmdevelopment.futsalzagi.clanarine.add.DodajClanarinuFragment"
+        android:label="Dodaj članarinu"
+        tools:layout="@layout/fragment_dodaj_clanarinu" >
+        <action
+            android:id="@+id/action_dodajClanarinuFragment_to_listaClanarinaFragment"
+            app:destination="@id/listaClanarinaFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_dodajClanarinuFragment_to_clanarinePoClanuFragment"
+            app:destination="@id/clanarinePoClanuFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/urediClanarinuFragment"
+        android:name="com.vmdevelopment.futsalzagi.clanarine.update.UrediClanarinuFragment"
+        android:label="Uredi"
+        tools:layout="@layout/fragment_uredi_clanarinu" >
+        <action
+            android:id="@+id/action_urediClanarinuFragment_to_listaClanarinaFragment"
+            app:destination="@id/listaClanarinaFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+        <argument
+            android:name="currentClanarinaItem"
+            app:argType="com.vmdevelopment.futsalzagi.data.models.Clanarina" />
+        <action
+            android:id="@+id/action_urediClanarinuFragment_to_clanarinePoClanuFragment"
+            app:destination="@id/clanarinePoClanuFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/clanarinePoClanuFragment"
+        android:name="com.vmdevelopment.futsalzagi.clanarine.list.ClanarinePoClanuFragment"
+        android:label="@string/clanarine"
+        tools:layout="@layout/fragment_clanarine_po_clanu" >
+        <action
+            android:id="@+id/action_clanarinePoClanuFragment_to_urediClanaFragment"
+            app:destination="@id/urediClanaFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+        <argument
+            android:name="currentClan"
+            app:argType="com.vmdevelopment.futsalzagi.data.models.Clan" />
+        <action
+            android:id="@+id/action_clanarinePoClanuFragment_to_urediClanarinuFragment"
+            app:destination="@id/urediClanarinuFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_clanarinePoClanuFragment_to_dodajClanarinuFragment"
+            app:destination="@id/dodajClanarinuFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+</navigation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/drawable/clanarina_item_back.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/drawable/custom_input.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/drawable/ic_add.xml" value="0.3828125" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/drawable/ic_calendar.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/drawable/ic_profile.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/drawable/item_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/activity_main.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/clanarina_po_clanu_row_layout.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/clanarina_row_layout.xml" value="0.33" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/fragment_clanarine.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/fragment_clanarine_po_clanu.xml" value="0.33" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/fragment_clanovi.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/fragment_dodaj_clana.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/fragment_dodaj_clanarinu.xml" value="0.25" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/fragment_lista_clanarina.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/fragment_lista_clanova.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/fragment_uredi_clana.xml" value="0.22" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/fragment_uredi_clanarinu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/layout/row_layout.xml" value="0.27668539325842695" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/menu/dodaj_clana_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/menu/lista_clanarina_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/menu/lista_clanova_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vedra/AndroidStudioProjects/FutsalZAGI/app/src/main/res/menu/uredi_clana_menu.xml" value="0.20520833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

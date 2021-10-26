@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_save"
+        android:title="@string/spremi"
+        android:icon="@drawable/ic_save"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menu_clanarine_po_clanu"
+        android:title="@string/clanarine"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_delete"
+        android:title="@string/ukloni_clana"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".clanarine.add.DodajClanarinuFragment">
+
+    <LinearLayout
+        android:id="@+id/clanLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/clanTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Član:"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextNumber"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerMjeseci" />
+
+        <Spinner
+            android:id="@+id/spinnerClanovi"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:entries="@array/clanovi"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mjesecLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clanLinearLayout">
+
+        <TextView
+            android:id="@+id/mjesecTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Mjesec:"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerMjeseci"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+
+            android:entries="@array/mjeseci"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mjesecLinearLayout">
+
+        <TextView
+            android:id="@+id/iznosTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Iznos (kn):"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextNumber"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerMjeseci"
+            />
+
+        <EditText
+            android:id="@+id/iznosEditText"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="200"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/light_blue"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerMjeseci"
+            tools:layout_editor_absoluteX="219dp" />
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/placenoCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/placeno"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

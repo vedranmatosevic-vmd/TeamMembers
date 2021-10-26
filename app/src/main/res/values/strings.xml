@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Futsal ZAGI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="clanovi">Članovi</string>
+    <string name="clanarina">Članarine</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="oib">OIB</string>
+    <string name="datum_rodjenja">Datum rođenja</string>
+    <string name="datum_uclanjenja">Datum učlanjenja</string>
+    <string name="trazi">Traži</string>
+    <string name="poredaj_po">Poredaj po:</string>
+    <string name="dodaj">Dodaj</string>
+    <string name="spremi">Spremi</string>
+    <string name="ukloni_clana">Obriši</string>
+    <string name="ime_i_prezime">Ime i Prezime</string>
+    <string name="clanarine">Članarine</string>
+    <string name="po_mjesecu">Po mjesecu</string>
+    <string name="po_clanu">Po članu</string>
+    <string name="placeno">Plaćeno</string>
+
+    <string-array name="mjeseci">
+        <item>Siječanj</item>
+        <item>Veljača</item>
+        <item>Ožujak</item>
+        <item>Travanj</item>
+        <item>Svibanj</item>
+        <item>Lipanj</item>
+        <item>Srpanj</item>
+        <item>Kolovoz</item>
+        <item>Rujan</item>
+        <item>Listopad</item>
+        <item>Studeni</item>
+        <item>Prosinac</item>
+    </string-array>
+
+    <string-array name="clanovi">
+        <item>Adrian Vidović</item>
+        <item>Ante Vugdelija</item>
+        <item>Filip Kuzman</item>
+    </string-array>
+</resources>
